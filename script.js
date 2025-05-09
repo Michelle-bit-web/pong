@@ -35,6 +35,19 @@ requestAnimationFrame(draw); // for repetitive drawing
 }
 
 function loop(){
+    if(key[38]){
+        p2 -= 5;
+    }
+     if(key[40]){
+        p2 += 5;
+    }
+     if(key[87]){
+        p1 -= 5;
+    }
+     if(key[83]){
+        p1 += 5;
+    }
+
     ball.x += ball.speedX; //change x direction
     ball.y += ball.speedY; //change y direction
 }
