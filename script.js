@@ -16,8 +16,16 @@ document.addEventListener("keyup", (event) => (key[event.keyCode] = false));
 function init() {
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext("2d");
+  document.addEventListener("keydown", startGame, { once: true });
+}
+
+function startGame() {
+  document.getElementById("startscreen").style.display = "none";
+  const bgMusic = document.getElementById("bg-music");
+  bgMusic.volume = 0.2;
+  bgMusic.play();
   draw();
-  let loopInterval = setInterval(() => loop(), 1000 / 60);
+   let loopInterval = setInterval(() => loop(), 1000 / 60);
 }
 
 function draw() {
@@ -84,3 +92,6 @@ function loop() {
 //--Game start / restart
 //--Count Wins
 //--Define final Win (2 of 3 Games)
+//--README
+//--Sounds
+//--Impressum
