@@ -77,3 +77,10 @@ function loop() {
     };
   }
 }
+
+
+//To-Do 
+
+//--Game start / restart
+//--Count Wins
+//--Define final Win (2 of 3 Games)
